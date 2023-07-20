@@ -2,11 +2,11 @@ import React from 'react';
 import css from './Filter.module.css';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { getFilter } from 'redux/selectors';
+import { selectFilter } from 'redux/selectors';
 import { filterChange } from 'redux/filterSlice';
 
 function Filter() {
-  const value = useSelector(getFilter);
+  const value = useSelector(selectFilter);
   const dispatch = useDispatch();
   const onFilterChange = e => {
     const newFilter = e.target.value.toLowerCase();
