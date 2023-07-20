@@ -5,20 +5,6 @@ import { addContact } from 'redux/operations';
 const ContactForm = () => {
   const dispatch = useDispatch();
 
-  // const [name, setName] = useState('');
-  // const [number, setNumber] = useState('');
-
-  // const dispatch = useDispatch();
-
-  // const handleChange = e => {
-  //   const { name: inputName, value } = e.target;
-  //   if (inputName === 'name') {
-  //     setName(value);
-  //   } else if (inputName === 'number') {
-  //     setNumber(value);
-  //   }
-  // };
-
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.target;
